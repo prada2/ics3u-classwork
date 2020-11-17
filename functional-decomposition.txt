@@ -19,3 +19,99 @@ You get a bag of chips from a vending machine
         - Put arm through slot
         - Grab chips
         - Pull arm out (with the chips)
+
+
+Vending machine perspective
+---------------------------
+
+Sending chips to despensory of vending machine.
+    - Retain the code punched in from human
+        - Select desired chips
+        - Push out desired chips to the despensory
+    - Allow chips to drop to dispensory
+        - human can then open door and take their chips
+        
+Programming concepts
+    - Vending machince has to be programmed to dispense the selected item
+    - Price of item has to be matched to the ID
+    
+    
+# A cookie is to big for a glass
+    
+Solution to problem
+-------------------
+
+    - Grab cookie
+        - left hand holding cup, rught hand grabs cookie
+        - bring up toi mouth
+    - Bite the sidedes until it is small enough to fit in the cup
+        - small bites to assure that some of the cookie will be left to dip into the milk
+    - Insert cookie into the cup
+        - dip in milk
+    - bring up to mouth
+        - finish the cookie
+        
+ How to prevent this problem
+ ---------------------------
+ 
+ - drink the milk first
+    - using left hand bring milk up to mouth
+    - drink milk
+    - using right hand, bring cookie up to mouth
+ - then take a bite of the cookie
+    - chew cookie
+    - swallow cookie with milk
+    
+ How can this problem be solved with an app?
+ ------------------------------------------
+ An app can be made to assure that the cookie is the right shape porportional to the glass of milk to allow the cookie to fit into the cup and dip into the milk
+ 
+ 
+ # people who cant park
+ 
+ Solution for problem
+ --------------------
+ 
+    - Police suspend driving license
+        - car it detained by police
+    - person who can't park is sent to parking school
+        - learns how to park
+        - takes final parking examination
+        - License is rewarded if parking examination is passed
+ 
+ How to prevent this problem
+ ---------------------------
+ 
+    - make lines bigger for those who can not park
+        - allows for more flexability to those who can not park in a tight space
+    - award tickets to all who can not park
+        - send those who can not park to parking school
+        
+How can this problem be solved with a robotic system?
+------------------------------------------------------
+ 
+ The robotics of the car could be engeneered to self park
+ - aquire Elon Musk
+    - explain the problem to him
+ - wait 1 month
+ - allow for Elon Musk to mass produce the product
+    - purchase a Tesla
+ 
+ 
+ 
+ 
+ 
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
