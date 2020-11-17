@@ -1,0 +1,21 @@
+# Functional Decomposition
+
+Vending machine from a human perspective  
+----------------------------------------
+
+You get a bag of chips from a vending machine
+    - Approach machine
+        - Walk until you are within arms reach
+    - Determine the number for the bag I want.
+        - Search for specific flavour
+        - Look just below it for ID number. (remember that number)
+    - Put in appropriate amount of money
+        - Look beside the ID number fpr the cost of the snack
+        - Get out some money that is greater or equal to that amount.
+        - Place that money into the intake.
+    - Key-in the number for the flavour.
+    - Get bag from bottom of machine.
+        - Bend down
+        - Put arm through slot
+        - Grab chips
+        - Pull arm out (with the chips)
