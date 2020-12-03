@@ -1,0 +1,54 @@
+# 1 Create a function that takes three numbers and adds them together.
+# dict = {1: "one", 2: "two", 3: "three"}
+# print(sum(dict))
+
+# 2 Create a function that takes a name and an age and returns a string message including both pieces of data.
+# name = input("Name? ")
+# age = input("Age? ")
+# def name_age(name: str, age: int) -> str:
+#     return name + age
+
+# result = name_age(name, age)
+# print(result)
+
+# 3 Create a function that takes two numbers and returns the average of those numbers.
+# number1 = input("Enter number1: ")
+# number2 = input("Enter number2: ")
+
+# def average(number1: int, number2: int) -> int:
+#   return (number1 + number2) / 2
+  
+# avg = average(int(number1), int(number2))
+# print(avg)
+
+# 4 Create a function that takes three numbers and returns the largest (don't use max).
+# number1 = int(input('Enter First number : '))
+# number2 = int(input('Enter Second number : '))
+# number3 = int(input('Enter Third number : '))
+# def largest(num1, num2, num3):
+#     if (num1 > num2) and (num1 > num3):
+#         largest_num = num1
+#     elif (num2 > num1) and (num2 > num3):
+#         largest_num = num2
+#     else:
+#         largest_num = num3
+#     print("The largest of the 3 numbers is : ", largest_num)
+# def smallest(num1, num2, num3):
+#     if (num1 < num2) and (num1 < num3):
+#         smallest_num = num1
+#     elif (num2 < num1) and (num2 < num3):
+#         smallest_num = num2
+#     else:
+#         smallest_num = num3
+#     print("The smallest of the 3 numbers is : ", smallest_num)
+# largest(number1, number2, number3)
+# smallest(number1, number2, number3)
+
+# 5 Create a function that takes a string and returns the first two characters.
+# str = "Hello"
+# def first_two(string: str) -> str:
+#     if len(str) > 1: 
+#         return str[0:2]
+    
+# result = first_two('Hello')
+# print(result)
