@@ -1,0 +1,40 @@
+import random
+
+word = ""
+word_see = ""
+word_list = ["hello", "school", "okay", "coding"]
+
+max_attempts = 6
+current_guesses_total = 0
+letters_in_word = []
+current_guess = ""
+
+
+while True:
+    word = random.choice(word_list)
+    current_guess = 0
+    letters_in_word = len(word) * "_"
+
+    print("Game - Hangman")
+    print("Objective: Guess the word")
+    print("This word is ", len(letters_in_word), " letters")
+    print()
+
+    while current_guesses_total < max_attempts:
+        current_guess = input("Enter a letter: ")
+
+        for i in range (0, len(word)):
+            if word[i] == current_guess:
+                letters_in_word = letters_in_word[:i] + current_guess + letters_in_word[i+1:]
+                print("LETTER!")
+                print(letters_in_word)
+
+        if word == letters_in_word:
+            print("WINNER!")
+            exit()
+        current_guesses_total += 1
+
+    print("GAME OVER!")
+    print()
+    print("The word was: ", word)
+    exit()
