@@ -1,0 +1,123 @@
+# 81
+import math
+
+def main():
+    while True:
+        try:
+            a = float(input("Enter first short side: "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+    
+    while True:
+        try:
+            b = float(input("Enter second short side: "))
+            break  
+        except ValueError:
+            print("Must input a number.")
+            
+    print("Length of hypotenuse is: ",hypotenuse(a,b))
+
+def hypotenuse(a: float, b: float) -> float:
+    return math.sqrt(a**2 + b**2)
+
+
+if __name__ == "__main__":
+    main()
+
+# 82
+def main():
+    while True:
+        try:
+            fare = int(input("Distance travelled (in km): "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+    
+    print("Total fare: $", cost_fare(fare))
+
+def cost_fare(distance_km):
+    distance_m = distance_km * 1000
+    fare = 4 + 0.25*(distance_m // 140)
+    return fare
+
+if __name__ == "__main__":
+    main()
+
+# 83
+def main():
+    while True:
+        try:
+            items = int(input("Number of items: "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+    
+    print("Total cost for shipping is: $", shipping(items))
+
+def shipping(items):
+    cost = 10.95 + (2.95*items)
+    return cost
+
+if __name__ == "__main__":
+    main()
+
+# 84
+def main():
+    while True:
+        try:
+            a = float(input("First value: "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+    
+    while True:
+        try:
+            b = float(input("Second value: "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+    
+    while True:
+        try:
+            c = float(input("Third value: "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+    
+    print("Median: ", median(a,b,c))
+
+def median(a,b,c):
+    return a+b+c-min(a,b,c)-max(a,b,c)
+
+if __name__ == "__main__":
+    main()
+
+# 85
+def main():
+    while True:
+        try:
+            integer = int(input("Interger: "))
+            break         
+        except ValueError:
+            print("Must input a number.")
+
+    print("ordinal number is", ordinal(integer))
+
+def ordinal(integer):
+    if integer <= 12:
+        if integer %10==1:
+            ordinall = u"%d%s" %(integer, "st")
+        elif integer %10==2:
+            ordinall = u"%d%s" %(integer, "nd")
+        elif integer %10==3:
+            ordinall = u"%d%s" %(integer, "rd")
+        else:
+            ordinall = u"%d%s" %(integer, "th")
+    
+    elif integer > 12:
+        ordinall = u"%d%s" %(integer, " ")
+    return ordinall
+
+if __name__ == "__main__":
+    main()
