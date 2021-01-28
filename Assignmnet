@@ -1,0 +1,222 @@
+############################################# MICHAEL
+
+import time
+
+def main():
+    print("Welcome, you will now be able to save energy, as well money by optimizing power usage.")
+
+    print()
+
+    settings = [
+        "menu",  # location
+        [],  # player inventory
+    ]
+
+    print("Menu")
+    while True:
+        location = settings[0]
+        if location == "menu":
+            menu(settings)
+        elif location == "speaker":
+            speaker(settings)
+        elif location == "printer":
+            printer(settings)
+        elif location == "modem":
+            modem(settings)
+        elif location == "done":
+            done(settings)
+        elif location == "quit":
+            print("Goodbye!")
+            break
+
+def menu(settings):
+    run = True
+    while run == True:
+        print("To view the changes to each system, as well enable energy optimization, select one of the following.")
+        print("[1] Speaker settings")
+        print("[2] Printer settings")
+        print("[3] Internet modem settings")
+        print("[4] Changes reviewd")
+        print("[5] Quit")
+
+        try: 
+            choice = int(input("> "))
+            if choice == 1:
+                settings == "speaker"
+                speaker(settings)
+                run = False
+            elif choice == 2:
+                settings == "printer"
+                printer(settings)
+                run = False
+            elif choice == 3:
+                settings == "modem"
+                modem(settings)
+                run = False
+            elif choice == 4:
+                settings == "done"
+                done(settings)
+                run = False
+            elif choice == 5:
+                settings == "quit"
+                quit(settings)
+                
+
+        except ValueError:
+            print("Must enter number.")
+            
+def speaker(settings):
+    print()
+    print("Speaker changes:")
+    print("   -  Speakers will only be turned on when videos or music is being played. ")
+    print("   -  When speakers are not being use, they will remain off.")
+     
+    print()
+
+    print("Would you like to enable this feature?")
+
+    while True:
+        print()
+        print("[1] Yes")
+        print("[2] No")
+        try:
+            enable = int(input("> "))
+            if enable == 1:
+                print("Speaker energy optimization enabled.")
+                break             
+            elif enable == 2:
+                print("Highly recommended feature")
+        except ValueError:
+            print("INVALID")
+
+def printer(settings):
+    print()
+    print("Printer changes:")
+    print("   -  Printer will only be turned when documents are being printed.")
+    print("   -  When decuments are not being printed, printer will remain off.")
+     
+    print()
+
+    print("Would you like to enable this feature?")
+
+    while True:
+        print()
+        print("[1] Yes")
+        print("[2] No")
+        try:
+            enable = int(input("> "))
+            if enable == 1:
+                print("Printer energy optimization enabled.")
+                break             
+            elif enable == 2:
+                print("Highly recommended feature")
+        except ValueError:
+            print("INVALID")
+
+def modem(settings):
+    print()
+    print("Modem changes:")
+    print("   -  Modem will only be turned on when internet is in use")
+    print("   -  When internet is not being used, modem will be turned off.")
+     
+    print()
+
+    print("Would you like to enable this feature?")
+
+    while True:
+        print()
+        print("[1] Yes")
+        print("[2] No")
+        try:
+            enable = int(input("> "))
+            if enable == 1:
+                print("modem energy optimization enabled.")
+                break             
+            elif enable == 2:
+                print("Highly recommended feature")
+        except ValueError:
+            print("INVALID")
+
+def done(settings):
+    speaker_on = False
+    printer_on = False
+    modem_on = False
+
+    while True:
+        print()
+        print("Turn printer ON or OFF")
+        print("[1] ON")
+        print("[2] OFF")
+        try:
+            choice = int(input("> "))
+            if choice == 1:
+                print("Please wait")
+                time.sleep(2)
+                print()
+                print("Printer is on")
+                printer_on = True
+                break
+            elif choice == 2:
+                print("Please wait")
+                time.sleep(2)
+                print()
+                print("Printer is off")
+                break
+            else: 
+                print("INVALID")
+        except ValueError:
+            print("INVALID")
+
+    while True:
+        print()
+        print("Turn speaker ON or OFF")
+        print("[1] ON")
+        print("[2] OFF")
+        try:
+            choice = int(input("> "))
+            if choice == 1:
+                print("Please wait")
+                time.sleep(2)
+                print()
+                print("Speaker is on")
+                speaker_on = True
+                break
+            elif choice == 2:
+                print("Please wait")
+                time.sleep(2)
+                print()
+                print("Speaker is off")
+                break
+            else: 
+                print("INVALID")
+        except ValueError:
+            print("INVALID")
+
+    while True:
+        print()
+        print("Turn modem ON or OFF")
+        print("[1] ON")
+        print("[2] OFF")
+        try:
+            choice = int(input("> "))
+            if choice == 1:
+                print("Please wait")
+                time.sleep(2)
+                print()
+                print("Modem is on")
+                modem_on = True
+                break
+            elif choice == 2:
+                print("Please wait")
+                time.sleep(2)
+                print()
+                print("Modem is off")
+                break
+            else: 
+                print("INVALID")
+        except ValueError:
+            print("INVALID")
+    
+if __name__ == "__main__":
+    main()
+
